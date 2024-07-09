@@ -1,0 +1,28 @@
+Currency-exchange
+http://localhost:8000/currency-exchange/from/AUD/to/INR
+
+currency conversion
+http://localhost:8100/currency-conversion/from/AUD/to/INR/quantity/10
+
+currency conversion via feign
+http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+eureka :
+http://localhost:8761/
+
+api-gateway:
+
+http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/AUD/to/INR
+http://localhost:8765/CURRENCY-CONVERSION/currency-conversion-feign/from/USD/to/INR/quantity/10
+http://localhost:8765/CURRENCY-CONVERSION/currency-conversion/from/USD/to/INR/quantity/10
+
+#After adding property of lowerCaseServiceId
+http://localhost:8765/currency-exchange/currency-exchange/from/AUD/to/INR
+http://localhost:8765/currency-conversion/currency-conversion-feign/from/USD/to/INR/quantity/10
+http://localhost:8765/currency-conversion/currency-conversion/from/USD/to/INR/quantity/10
+
+
+#After adding configuration class
+http://localhost:8765/currency-exchange/from/AUD/to/INR
+http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/20
+http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/20
